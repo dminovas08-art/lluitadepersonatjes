@@ -4,5 +4,6 @@ public class EquipDavant extends Equip {
         afegirPersonatge(new Puado("Bernat", this));
         afegirPersonatge(new MissDanger("Isaac", this));
         afegirPersonatge(new ExercitMinioms("Daniel", this));
+        afegirPersonatge(new Teletubi("David", this));
     }
 }

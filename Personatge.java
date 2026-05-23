@@ -31,6 +31,18 @@ public abstract class Personatge {
             malFet = malFet + mal;
         }
     }
+    public void rebreCuracio(int quantitat) {
+        if (estaViu) {
+            vidaActual = vidaActual + quantitat;
+            if (vidaActual > VIDA_INICIAL) {
+                vidaActual = VIDA_INICIAL;
+            }
+
+            UI.mostrarRebreCuracio(this, vidaActual);
+        }
+    }
+
+
 
     public void rebreMal(int mal) {
         if (estaViu) {

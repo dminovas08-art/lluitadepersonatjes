@@ -31,6 +31,14 @@ public class UI {
             System.out.println(p.getNom() + " ha mort.");
         }
     }
+    public static void mostrarCuracio(Personatge curador, Personatge objectiu, int quantitat) {
+        System.out.println(curador.getNom() + " cura a " + objectiu.getNom() +
+                " amb " + quantitat + " punts de vida.");
+    }
+
+    public static void mostrarRebreCuracio(Personatge p, int vidaActual) {
+        System.out.println(p.getNom() + " ha rebut curació, ara té " + vidaActual + " de vida.");
+    }
 
     public static void mostrarFi(ArrayList<Personatge> personatges) {
         System.out.println();
